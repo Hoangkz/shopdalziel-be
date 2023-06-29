@@ -55,12 +55,12 @@ app.use(session({
     app.use(passport.session());
 const db = require('./config/db')
 
-db.connect();
+// db.connect();
 
 
 
 
-app.use("/api-swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+// app.use("/api-swagger", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 app.listen(port, () => {
   console.log(`App listening on http://localhost:${port}`)
